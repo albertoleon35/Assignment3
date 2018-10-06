@@ -75,13 +75,53 @@
                                 </subviews>
                                 <variation key="heightClass=compact-widthClass=compact" distribution="fillEqually" spacing="130"/>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="ZkP-B1-yrX">
+                                <rect key="frame" x="16" y="250" width="243.5" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwg-go-SXp">
+                                        <rect key="frame" x="0.0" y="0.0" width="45" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cgO-TW-V6G">
+                                        <rect key="frame" x="84" y="0.0" width="159.5" height="30"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="u5o-kX-FGv">
+                                <rect key="frame" x="16" y="295" width="263" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laE-3m-x3W">
+                                        <rect key="frame" x="0.0" y="0.0" width="74" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eIN-JQ-NOm">
+                                        <rect key="frame" x="87" y="0.0" width="176" height="30"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="ZkP-B1-yrX" firstAttribute="top" secondItem="bn9-y6-53N" secondAttribute="bottom" constant="200" id="3CK-Uo-q7D">
+                                <variation key="heightClass=compact-widthClass=compact" constant="100"/>
+                            </constraint>
+                            <constraint firstItem="u5o-kX-FGv" firstAttribute="top" secondItem="ZkP-B1-yrX" secondAttribute="bottom" constant="15" id="B9G-La-ipl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oUR-dl-7pt" secondAttribute="trailing" constant="16" id="BpU-Zq-Mfv"/>
                             <constraint firstItem="bn9-y6-53N" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" symbolic="YES" id="EO8-A8-CB2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bn9-y6-53N" secondAttribute="trailing" constant="16" id="OE8-Ax-kjh"/>
                             <constraint firstAttribute="bottom" secondItem="oUR-dl-7pt" secondAttribute="bottom" constant="20" symbolic="YES" id="TgH-vF-hKu"/>
+                            <constraint firstItem="u5o-kX-FGv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ejb-pF-ygb"/>
+                            <constraint firstItem="ZkP-B1-yrX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tLs-36-vCg"/>
                             <constraint firstItem="oUR-dl-7pt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tWF-Ae-bYl"/>
                             <constraint firstItem="bn9-y6-53N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="vMf-Tv-JzE"/>
                         </constraints>
@@ -90,7 +130,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="136.28185907046478" y="132"/>
         </scene>
     </scenes>
 </document>
